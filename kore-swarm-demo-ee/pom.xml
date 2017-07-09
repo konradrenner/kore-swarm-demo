@@ -74,8 +74,8 @@
       <artifactId>jpa</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.wildfly.swarm</groupId>
-      <artifactId>jpa-postgresql</artifactId>
+      <groupId>postgresql</groupId>
+      <artifactId>postgresql</artifactId>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
