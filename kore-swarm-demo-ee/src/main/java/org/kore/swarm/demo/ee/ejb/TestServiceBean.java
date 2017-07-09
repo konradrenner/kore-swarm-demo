@@ -14,27 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.kore.swarm.demo.ee.rest;
+package org.kore.swarm.demo.ee.ejb;
 
-import javax.ejb.EJB;
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.ws.rs.Path;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.GET;
-import javax.ws.rs.Produces;
-import org.kore.swarm.demo.ee.ejb.TestServiceBean;
+import javax.ejb.Stateless;
 
-@ApplicationScoped
-@Path("/hello")
-public class HelloWorldEndpoint {
+/**
+ *
+ * @author koni
+ */
+@Stateless
+public class TestServiceBean {
     
-    @Inject
-    TestServiceBean bean;
-
-    @GET
-    @Produces("text/plain")
-    public Response doGet() {
-            return Response.ok(bean.getHelloWorld()).build();
+    public String getHelloWorld(){
+        return "Hello World";
     }
 }

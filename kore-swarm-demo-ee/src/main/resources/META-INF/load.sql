@@ -14,27 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.kore.swarm.demo.ee.rest;
 
-import javax.ejb.EJB;
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.ws.rs.Path;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.GET;
-import javax.ws.rs.Produces;
-import org.kore.swarm.demo.ee.ejb.TestServiceBean;
 
-@ApplicationScoped
-@Path("/hello")
-public class HelloWorldEndpoint {
-    
-    @Inject
-    TestServiceBean bean;
-
-    @GET
-    @Produces("text/plain")
-    public Response doGet() {
-            return Response.ok(bean.getHelloWorld()).build();
-    }
-}
+INSERT INTO TESTTABLE("id", "name") VALUES (1, 'Max')
+INSERT INTO TESTTABLE("id", "name") VALUES (2, 'Mustermann')
