@@ -74,13 +74,12 @@
       <artifactId>jpa</artifactId>
     </dependency>
     <dependency>
-      <groupId>postgresql</groupId>
-      <artifactId>postgresql</artifactId>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>${version.postgresql}</version>
+      <groupId>org.wildfly.swarm</groupId>
+      <artifactId>datasources</artifactId>
     </dependency>
     <dependency>
       <groupId>org.wildfly.swarm</groupId>
@@ -94,6 +93,5 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <version.wildfly-swarm>2017.6.1</version.wildfly-swarm>
-    <version.postgresql>42.1.1</version.postgresql>
   </properties>
 </project>
